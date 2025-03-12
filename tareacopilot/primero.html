@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con estructuras diversas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a mi página</h1>
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="#seccion1">Sección de Contacto</a></li>
+                <li><a href="#seccion2">Tabla de Datos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="seccion1" aria-labelledby="contacto-title">
+            <h2 id="contacto-title">Formulario de Contacto</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" aria-required="true" required>
+                
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" aria-required="true" required>
+                
+                <button type="submit" aria-label="Enviar formulario de contacto">Enviar</button>
+            </form>
+        </section>
+        <section id="seccion2" aria-labelledby="tabla-title">
+            <h2 id="tabla-title">Tabla de Datos</h2>
+            <table>
+                <caption>Lista de personas con su edad</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Edad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ana</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>Juan</td>
+                        <td>30</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>Derechos Reservados &copy; 2025</p>
+    </footer>
+</body>
+</html>
